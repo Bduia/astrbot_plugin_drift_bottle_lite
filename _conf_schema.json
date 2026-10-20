@@ -1,0 +1,17 @@
+{
+  "bottle_enabled": { "description": "是否启用漂流瓶", "type": "bool", "default": true },
+  "bottle_max_length": { "description": "瓶子内容最大字数", "type": "int", "default": 200 },
+  "bottle_max_lifespan_hours": { "description": "瓶子寿命（小时）", "type": "int", "default": 72 },
+  "bottle_max_pickups": { "description": "最大被捞次数", "type": "int", "default": 3 },
+  "bottle_cooldown_seconds": { "description": "个人扔瓶冷却（秒）", "type": "int", "default": 60 },
+  "target_group_window": { "description": "目标群接收时间窗口（秒）", "type": "int", "default": 300, "hint": "计算接收数量的时间周期。" },
+  "max_bottles_per_window": { "description": "窗口内最多接收数量", "type": "int", "default": 2, "hint": "在上述时间内，一个群最多收几个瓶子。" },
+  "max_total_bottles": { "description": "全服海面最大容量", "type": "int", "default": 500, "hint": "防止服务器内存爆炸，达到上限将禁止扔瓶。" },
+  "max_bottles_per_group": { "description": "单群海面最大容量", "type": "int", "default": 20, "hint": "单个群最多同时存在多少个未捞的瓶子。" },
+  "duplicate_check_hours": { "description": "内容去重时间（小时）", "type": "int", "default": 24, "hint": "防止重复刷屏，设定为0则不去重。" },
+  "bottle_nicknames": { "description": "个人代号池", "type": "string", "default": "一只水母,一只海鸥,一个路过的渔民,深海巨兽,海星" },
+  "group_nicknames": { "description": "群代号池", "type": "string", "default": "东海龙宫,花果山,水帘洞,蓬莱仙岛,极地冰原,深海遗迹,幽灵船,水晶宫,海神岛,人鱼湾" },
+  "bottle_blacklist_words": { "description": "敏感词拦截", "type": "string", "default": "傻逼,广告" },
+  "bottle_group_whitelist": { "description": "参与群白名单", "type": "string", "default": "" },
+  "bottle_admin_ids": { "description": "管理员QQ", "type": "string", "default": "" }
+}
