@@ -14,7 +14,8 @@ class DriftBottleFull(Star):
     def __init__(self, context: Context, config: dict = None):
         super().__init__(context)
         self.config = config or {}
-                # 规范做法：把数据存到专属子文件夹中
+        
+        # 规范做法：把数据存到专属子文件夹中
         self.data_dir = os.path.join(get_astrbot_data_path(), "plugin_data", "astrbot_plugin_drift_bottle_lite")
         os.makedirs(self.data_dir, exist_ok=True)
         
@@ -81,7 +82,7 @@ class DriftBottleFull(Star):
         w_str = self.config.get("bottle_group_whitelist", "")
         return not w_str or str(gid) in [w.strip() for w in w_str.split(",")]
 
-        def is_admin(self, event):
+    def is_admin(self, event):
         # 删除了硬编码，完全依赖后台配置
         sender_id = str(event.get_sender_id())
         admins = self.config.get("bottle_admin_ids", "").split(",")
