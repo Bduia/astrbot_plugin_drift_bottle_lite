@@ -1,6 +1,6 @@
 name: astrbot_plugin_drift_bottle_lite  # 这个名字必须是你仓库和文件夹的英文名，千万别动！
 display_name: 跨群漂流瓶                # 新增这个！这是别人在插件市场看到的中文名
 desc: 一个轻量级、带隐私保护的跨群盲盒聊天插件，支持随机代号与跨群漂流。 # 这里的介绍用中文写详细点
-version: 1.0.0
+version: 1.0.1
 author: 你的名字
 repo: https://github.com/你的用户名/astrbot_plugin_drift_bottle_lite
